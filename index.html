@@ -10,6 +10,23 @@
 
     gtag('config', 'AW-18112677515');
   </script>
+  <!-- Event snippet for Enviar formulário de lead conversion page -->
+  <script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-18112677515/h_qSCPuZ6bscEIuN5rxD',
+        'value': 1.0,
+        'currency': 'BRL',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NPP — Núcleo de Práticas Profissionais</title>
@@ -651,6 +668,7 @@
         btn.textContent = 'Enviado! Em breve entraremos em contato.';
         btn.style.background = '#2d6a4f';
         btn.style.color = '#e8f5ee';
+        gtag_report_conversion();
       } catch {
         btn.textContent = 'Erro ao enviar. Tente novamente.';
         btn.style.background = '#7f1d1d';
