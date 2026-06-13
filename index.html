@@ -411,44 +411,46 @@
 
     /* ── HERO TESTIMONIAL ── */
     .hero-review {
-      display: inline-flex; align-items: center; gap: .9rem;
+      display: inline-flex; align-items: center; gap: 1.25rem;
       margin-top: 2rem;
-      padding: .65rem 1.2rem .65rem .65rem;
+      padding: 1rem 1.75rem 1rem 1rem;
       border-radius: 999px;
       border: 1px solid rgba(201,168,76,.22);
       background: rgba(201,168,76,.06);
       backdrop-filter: blur(8px);
     }
     .hero-review-logo {
-      height: 36px; width: 36px;
+      height: 56px; width: 56px;
       border-radius: 50%;
       object-fit: cover; flex-shrink: 0;
       border: 1px solid rgba(201,168,76,.3);
     }
     .hero-review-body {
-      display: flex; flex-direction: column; align-items: flex-start; gap: .15rem;
+      display: flex; flex-direction: column; align-items: flex-start; gap: .25rem;
     }
     .hero-review-stars {
-      display: flex; gap: .12rem;
+      display: flex; gap: .18rem;
     }
-    .hero-review-stars svg { width: 11px; height: 11px; }
+    .hero-review-stars svg { width: 16px; height: 16px; }
     .hero-review-quote {
       font-family: 'DM Sans', sans-serif;
-      font-size: .74rem; font-weight: 400;
+      font-size: 1rem; font-weight: 400;
       color: var(--cream);
       line-height: 1.4;
-      max-width: 30ch;
+      max-width: 36ch;
       text-align: left;
     }
     .hero-review-author {
       font-family: 'Cormorant Garamond', serif;
-      font-size: .65rem; font-weight: 500;
+      font-size: .85rem; font-weight: 500;
       letter-spacing: .1em; text-transform: uppercase;
       color: var(--gold);
     }
     @media (max-width: 768px) {
-      .hero-review { gap: .65rem; padding: .5rem .9rem .5rem .5rem; }
-      .hero-review-quote { font-size: .68rem; max-width: 22ch; }
+      .hero-review { gap: .9rem; padding: .75rem 1.25rem .75rem .75rem; }
+      .hero-review-logo { height: 44px; width: 44px; }
+      .hero-review-quote { font-size: .88rem; max-width: 26ch; }
+      .hero-review-stars svg { width: 13px; height: 13px; }
     }
 
     .btn-submit {
