@@ -408,6 +408,49 @@
       box-shadow: 0 12px 36px rgba(232,184,0,.45);
     }
     .btn-hero:active { transform: translateY(0); }
+
+    /* ── HERO TESTIMONIAL ── */
+    .hero-review {
+      display: inline-flex; align-items: center; gap: .9rem;
+      margin-top: 2rem;
+      padding: .65rem 1.2rem .65rem .65rem;
+      border-radius: 999px;
+      border: 1px solid rgba(201,168,76,.22);
+      background: rgba(201,168,76,.06);
+      backdrop-filter: blur(8px);
+    }
+    .hero-review-logo {
+      height: 36px; width: 36px;
+      border-radius: 50%;
+      object-fit: cover; flex-shrink: 0;
+      border: 1px solid rgba(201,168,76,.3);
+    }
+    .hero-review-body {
+      display: flex; flex-direction: column; align-items: flex-start; gap: .15rem;
+    }
+    .hero-review-stars {
+      display: flex; gap: .12rem;
+    }
+    .hero-review-stars svg { width: 11px; height: 11px; }
+    .hero-review-quote {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .74rem; font-weight: 400;
+      color: var(--cream);
+      line-height: 1.4;
+      max-width: 30ch;
+      text-align: left;
+    }
+    .hero-review-author {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: .65rem; font-weight: 500;
+      letter-spacing: .1em; text-transform: uppercase;
+      color: var(--gold);
+    }
+    @media (max-width: 768px) {
+      .hero-review { gap: .65rem; padding: .5rem .9rem .5rem .5rem; }
+      .hero-review-quote { font-size: .68rem; max-width: 22ch; }
+    }
+
     .btn-submit {
       font-family: 'DM Sans', sans-serif;
       font-size: .78rem; font-weight: 500;
@@ -483,6 +526,22 @@
       </p>
       <div class="btn-hero-wrap fade-up" style="transition-delay: .22s">
         <a href="#formulario" class="btn-hero">Saiba mais</a>
+      </div>
+      <div style="display:flex;justify-content:center;margin-top:1.5rem;" class="fade-up" style="transition-delay:.32s">
+        <div class="hero-review">
+          <img src="blulens-logo.jpeg" alt="Ótica Blulens" class="hero-review-logo" />
+          <div class="hero-review-body">
+            <div class="hero-review-stars">
+              <svg viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <span class="hero-review-quote">O plano de negócios e análise ficou ótimo — muito obrigado pelo site!</span>
+            <span class="hero-review-author">Ótica Blulens</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
